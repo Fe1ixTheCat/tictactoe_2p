@@ -1,0 +1,75 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Comic Neue', cursive;
+}
+
+@bg: #116062;
+@main: #f44;
+
+body {
+ background-color: @bg;
+}
+
+main {
+	margin-top: 5%;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+	border-radius: 25px;
+	background-color: #f44;
+	box-shadow: 2px 2px 20px 1px #f00;
+	#game {
+		width: 250px;
+		height: 250px;
+		margin-top: 25%;
+		display: grid;
+		grid-template-columns: 33.33% 33.33% 33.33%;
+		.block {
+			img {
+				width: 100%;
+			}
+		}
+		h2 {
+			position: relative;
+			width: 300%;
+			text-align: center;
+		}
+		p {
+			cursor: pointer;
+			border: 1px solid @bg;
+			background-color: @bg;
+			border-radius: 5px;
+			height: 40%;
+			width: 80%;
+			text-align: center;
+			line-height: 40px;
+			transition: 0.15s;
+		}
+		p:hover {
+			background-color: @main;
+		}
+		.block {
+			width: 83px;
+			height: 83px;
+			outline: 1px solid;
+			cursor: pointer;
+		}
+	}
+}
+
+footer {
+	position: relative;
+	bottom: 375px;
+	right: 400px;
+	width: 180px;
+	height: 180px;
+	padding: 20px;
+	border: 1px solid #000;
+	border-radius: 25px;
+	background-color: #f44;
+	box-shadow: 2px 2px 20px 1px #f00;
+	p {
+		cursor: pointer;
+	}
+}
